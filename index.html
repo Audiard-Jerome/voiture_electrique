@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comparateur de coûts voiture électrique vs thermique</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Comparateur de coûts voiture électrique vs thermique</h1>
+    <p>Ce comparateur prend en compte la consommation de la voiture, le prix de l'essence et de l'électricité, le prix d'achat et les aides éventuelles pour vous aider à choisir le véhicule le plus adapté à vos besoins.</p>
+
+    <h2>Voiture thermique</h2>
+    <div class="form-group">
+      <label for="prix_achat_thermique">Prix d'achat (€) :</label>
+      <input type="number" id="prix_achat_thermique">
+    </div>
+    <div class="form-group">
+      <label for="conso_thermique">Consommation (L/100km) :</label>
+      <input type="number" id="conso_thermique" step="0.1">
+    </div>
+    <div class="form-group">
+      <label for="assurance_thermique">Assurance annuelle (€) :</label>
+      <input type="number" id="assurance_thermique" step="0.01">
+    </div>
+    <div class="form-group">
+      <label for="revision_thermique">Révision annuelle (€) :</label>
+      <input type="number" id="revision_thermique" step="0.01">
+    </div>
+
+    <h2>Voiture électrique</h2>
+    <div class="form-group">
+      <label for="prix_achat_electrique">Prix d'achat (€) :</label>
+      <input type="number" id="prix_achat_electrique">
+    </div>
+    <div class="form-group">
+      <label for="conso_electrique">Consommation (kWh/100km) :</label>
+      <input type="number" id="conso_electrique" step="0.1">
+    </div>
+    <div class="form-group">
+      <label for="assurance_electrique">Assurance annuelle (€) :</label>
+      <input type="number" id="assurance_electrique" step="0.01">
+    </div>
+    <div class="form-group">
+      <label for="revision_electrique">Révision annuelle (€) :</label>
+      <input type="number" id="revision_electrique" step="0.01">
+    </div>
+
+    <h2>Coûts et aides</h2>
+    <div class="form-group">
+      <label for="prix_essence">Prix de l'essence (€/L) :</label>
+      <input type="number" id="prix_essence" step="0.01">
+    </div>
+    <div class="form-group">
+      <label for="prix_electricite">Prix de l'électricité (€/kWh) :</label>
+      <input type="number" id="prix_electricite" step="0.01">
+    </div>
+    <div class="form-group">
+      <label for="aide_achat_thermique">Aide à l'achat thermique (€) :</label>
+      <input type="number" id="aide_achat_thermique">
+    </div>
+    <div class="form-group">
+      <label for="aide_achat_electrique">Aide à l'achat électrique (€) :</label>
+      <input type="number" id="aide_achat_electrique">
+    </div>
+    <div class="form-group">
+      <label for="duree">Durée de possession (années) :</label>
+      <input type="number" id="duree">
+    </div>
+    <div class="form-group">
+      <label for="distance">Distance annuelle (km) :</label>
+      <input type="number" id="distance">
+    </div>
+
+    <button onclick="calculer()">Calculer</button>
+    <button onclick="reset()">Reset</button>
+
+    <div id="resultat"></div>
+
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -49,7 +49,7 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 
 ### Licence
 
-Ce projet est sous licence GNU3.
+Ce projet est sous licence GPL-3.
 
 ### Auteurs
 

@@ -5,7 +5,7 @@
 Ce projet est un outil en ligne permettant de comparer les coûts d'utilisation à long terme d'une voiture électrique et d'une voiture thermique. Il prend en compte différents facteurs tels que :
 
 * **Prix d'achat** des véhicules
-* **Consommation** en énergie (essence ou électricité)
+* **Consommation** en énergie (carburant ou électricité)
 * **Prix des carburants**
 * **Prix des Révisions annuelles**
 * **Prix de l'assurance**
@@ -38,7 +38,7 @@ L'application génère un graphique comparatif des coûts totaux sur la durée c
 
 Ou alors allez sur la GitHub Pages 
 
-https://audiard-jerome.github.io/voiture/
+https://audiard-jerome.github.io/voiture_electrique/
 
 ### Contribuer
 

@@ -33,7 +33,7 @@ h1, h2 {
 }
 
 .form-group input {
-    flex: 2;
+    flex: 1;
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid #ccc;
